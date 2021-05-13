@@ -52,7 +52,7 @@ jobs:
           # Provide SCA Access Control URL
           sca_access_control_url: https://platform.checkmarx.net    
           # Provide SCA Tenant
-          sca_tenant: Ps-Team-Emea
+          sca_tenant: ps-team-emea
           # Provide SCA Username
           sca_username: ttinoco
           # Provide SCA Password
