@@ -56,7 +56,7 @@ jobs:
           # Provide SCA Username
           sca_username: ttinoco
           # Provide SCA Password
-          sca_password: Checkmarx123!
+          sca_password: "#TcT4815162342"
           
           
           
