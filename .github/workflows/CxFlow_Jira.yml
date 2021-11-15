@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CxFlow
+name: CxFlow_Jira
 
 # Controls when the workflow will run
 on:
@@ -30,7 +30,6 @@ jobs:
         # uses: checkmarx-ts/checkmarx-cxflow-github-action@fe2a395cbbee31268470d92b6c53ebc483005f0f
         uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.3        
         with:          
-          team: /CxServer/TesterTeam/t01
           project: JavaVulnerableLab-GitHub-action-Resolver
           # Select an Application Name used by downstream bug tracker systems
           app: HelloWorld
@@ -65,7 +64,7 @@ jobs:
           # Provide SCA Password
           sca_password: ${{ secrets.CX_SCA_PASSWORD }}          
           bug_tracker: JIRA          
-          params: --sca.filter-severity=MEDIUM --sca.team=/CxServer --sca.include-sources=false --config=cx.config --repo-name=JavaVulnerableLab --namespace=TaynaCT --branch=master --jira.url=${{secrets.JIRA_URL}} --jira.username=${{secrets.JIRA_USER}} --jira.token=${{secrets.JIRA_TOKEN}}
+          params: --sca.filter-severity=MEDIUM --sca.team=/CxServer/TesterTeam --sca.include-sources=false --config=cx.config --repo-name=JavaVulnerableLab --namespace=TaynaCT --branch=master --jira.url=${{secrets.JIRA_URL}} --jira.username=${{secrets.JIRA_USER}} --jira.token=${{secrets.JIRA_TOKEN}}
           #Logs parameters
           #--logging.level.com.checkmarx.flow.custom=debug --logging.level.com.checkmarx.flow.service=debug --logging.level.com.checkmarx.flow.utils=debug --logging.level.com.checkmarx.sdk.service=debug
           
