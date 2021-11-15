@@ -30,9 +30,9 @@ jobs:
         # uses: checkmarx-ts/checkmarx-cxflow-github-action@fe2a395cbbee31268470d92b6c53ebc483005f0f
         uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.3        
         with:          
-          project: JavaVulnerableLab-GitHub-action-Resolver
+          project: JavaVulnerableLab-GitHub-action
           # Select an Application Name used by downstream bug tracker systems
-          app: HelloWorld
+          app: JavaVulnerableLab
           # GitHub API Token
           #github_token: ${{ secrets.GH_TOKEN }}
           # Vulnerability Scanners (sast, sca, ast, cxgo)
