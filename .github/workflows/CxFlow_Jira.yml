@@ -63,7 +63,7 @@ jobs:
           sca_username: ${{ secrets.CX_SCA_USERNAME }}
           # Provide SCA Password
           sca_password: ${{ secrets.CX_SCA_PASSWORD }}          
-          bug_tracker: JIRA
-          params: --config=cx.config --sca.team=/CxServer/TesterTeam --sca.include-sources=false --repo-name=JavaVulnerableLab --namespace=TaynaCT --branch=master --jira.url=${{secrets.JIRA_URL}} --jira.username=${{secrets.JIRA_USER}} --jira.token=${{secrets.JIRA_TOKEN}} --logging.level.com.checkmarx.flow.custom=debug --logging.level.com.checkmarx.flow.service=debug --logging.level.com.checkmarx.flow.utils=debug --logging.level.com.checkmarx.sdk.service=debug
+          #bug_tracker: JIRA
+          #params: --config=cx.config --sca.team=/CxServer/TesterTeam --sca.include-sources=false --repo-name=JavaVulnerableLab --namespace=TaynaCT --branch=master --jira.url=${{secrets.JIRA_URL}} --jira.username=${{secrets.JIRA_USER}} --jira.token=${{secrets.JIRA_TOKEN}} --logging.level.com.checkmarx.flow.custom=debug --logging.level.com.checkmarx.flow.service=debug --logging.level.com.checkmarx.flow.utils=debug --logging.level.com.checkmarx.sdk.service=debug
           #
           
